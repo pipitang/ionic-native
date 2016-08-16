@@ -52,6 +52,7 @@ import {ImagePicker} from './plugins/imagepicker';
 import {ImageResizer} from './plugins/imageresizer';
 import {InAppBrowser} from './plugins/inappbrowser';
 import {Insomnia} from './plugins/insomnia';
+import {JpushPlugin} from './plugins/jpush-plugin'
 import {Keyboard} from './plugins/keyboard';
 import {LaunchNavigator} from './plugins/launchnavigator';
 import {LocalNotifications} from './plugins/localnotifications';
@@ -107,6 +108,7 @@ export * from './plugins/ibeacon';
 export * from './plugins/imagepicker';
 export * from './plugins/imageresizer';
 export * from './plugins/inappbrowser';
+export * from './plugins/jpush-plugin';
 export * from './plugins/launchnavigator';
 export * from './plugins/localnotifications';
 export * from './plugins/media';
@@ -223,6 +225,7 @@ window['IonicNative'] = {
   ImagePicker: ImagePicker,
   ImageResizer: ImageResizer,
   InAppBrowser: InAppBrowser,
+  JpushPlugin: JpushPlugin,
   Keyboard: Keyboard,
   LaunchNavigator: LaunchNavigator,
   LocalNotifications: LocalNotifications,
