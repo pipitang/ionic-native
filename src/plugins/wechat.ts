@@ -14,7 +14,7 @@ import {Plugin, Cordova, CordovaProperty, CordovaInstance, InstanceProperty} fro
 import {Observable} from 'rxjs/Observable';
 
 
-enum WechatShareScene {
+export enum WechatShareScene {
     SESSION  =  0, // 聊天界面
     TIMELINE = 1, // 朋友圈
     FAVORITE = 2  // 收藏
