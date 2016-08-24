@@ -66,6 +66,21 @@ export class JpushPlugin {
     return window['cordova'].plugins.jPushPlugin.receiveNotification;
   }
   
+
+  /**
+   * https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/Android_detail_api.md#api---clearallnotification
+   */
+  @Cordova({ sync: true})
+  static clearAllNotification(): void {}
+  
+
+  /**
+   * https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/iOS_API.md#api---setapplicationiconbadgenumber
+   */
+  @Cordova({sync: true})
+  static setApplicationIconBadgeNumber(num: number): void {}
+  
+
   static addReceiveNotificationListener(callback: (event: any) => any) {
     document.addEventListener("jpush.receiveNotification", callback, false);
   }
@@ -73,5 +88,7 @@ export class JpushPlugin {
   static addOpenNotification(callback: (event: any) => any) {
     document.addEventListener("jpush.openNotification", callback, false);
   }
+
+
 
 }
