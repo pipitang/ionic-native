@@ -86,6 +86,7 @@ import {TwitterConnect} from './plugins/twitter-connect';
 import {Vibration} from './plugins/vibration';
 import {VideoPlayer} from './plugins/video-player';
 import {WebIntent} from './plugins/webintent';
+import {Wechat} from './plugins/wechat'
 import {Zip} from './plugins/zip';
 export * from './plugins/3dtouch';
 export * from './plugins/background-geolocation';
@@ -121,6 +122,7 @@ export * from './plugins/spinnerdialog';
 export * from './plugins/toast';
 export * from './plugins/twitter-connect';
 export * from './plugins/video-player';
+export * from './plugins/wechat';
 export {
   ActionSheet,
   AdMob,
@@ -260,6 +262,7 @@ window['IonicNative'] = {
   VideoPlayer: VideoPlayer,
   Vibration: Vibration,
   WebIntent: WebIntent,
+  Wechat: Wechat,
   Zip: Zip
 };
 
