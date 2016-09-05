@@ -81,6 +81,18 @@ export class JpushPlugin {
   static setApplicationIconBadgeNumber(num: number): void {}
   
 
+  /**
+   * https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/iOS_API.md#api---setbadge-resetbadge
+   */
+  @Cordova({ sync: true})
+  static setBadge(num: number): void {}
+
+  /**
+   * https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/iOS_API.md#api---setbadge-resetbadge
+   */
+  @Cordova({ sync: true})
+  static reSetBadge(): void {}
+
   static addReceiveNotificationListener(callback: (event: any) => any) {
     document.addEventListener("jpush.receiveNotification", callback, false);
   }
@@ -89,6 +101,9 @@ export class JpushPlugin {
     document.addEventListener("jpush.openNotification", callback, false);
   }
 
+  static addBackgroundNotification(callback: (event: any) => any) {
+    document.addEventListener("jpush.backgroundNotification", callback, false);
+  }
 
 
 }
