@@ -93,17 +93,24 @@ export class JpushPlugin {
   @Cordova({ sync: true})
   static reSetBadge(): void {}
 
-  static addReceiveNotificationListener(callback: (event: any) => any) {
+  //event - jpush.openNotification
+  static addReceiveNotification(callback: (event: any) => any) {
     document.addEventListener("jpush.receiveNotification", callback, false);
   }
 
+  //https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/iOS_API.md#event---jpushreceivenotification
   static addOpenNotification(callback: (event: any) => any) {
     document.addEventListener("jpush.openNotification", callback, false);
   }
 
+  //https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/iOS_API.md#event---jpushbackgroundnotification
   static addBackgroundNotification(callback: (event: any) => any) {
     document.addEventListener("jpush.backgroundNotification", callback, false);
   }
 
+  // https://github.com/jpush/jpush-phonegap-plugin/blob/master/doc/iOS_API.md#event---jpushreceivemessage
+  static addReceiveMessage(callback: (event: any) => any) {
+    document.addEventListener("jpush.receiveMessage", callback, false);
+  }
 
 }
