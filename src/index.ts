@@ -10,6 +10,7 @@ import { AndroidFingerprintAuth } from './plugins/android-fingerprint-auth';
 import {AppAvailability} from './plugins/appavailability';
 import {AppRate} from './plugins/apprate';
 import {AppVersion} from './plugins/appversion';
+import {AlipayBase} from './plugins/alipay';
 import {Badge} from './plugins/badge';
 import {BackgroundGeolocation} from './plugins/background-geolocation';
 import {BackgroundMode} from './plugins/backgroundmode';
@@ -89,6 +90,7 @@ import {WebIntent} from './plugins/webintent';
 import {Wechat} from './plugins/wechat'
 import {Zip} from './plugins/zip';
 export * from './plugins/3dtouch';
+export * from './plugins/alipay';
 export * from './plugins/background-geolocation';
 export * from './plugins/backgroundmode';
 export * from './plugins/batterystatus';
@@ -187,6 +189,7 @@ window['IonicNative'] = {
   AppAvailability: AppAvailability,
   AppRate: AppRate,
   AppVersion: AppVersion,
+  AlipayBase: AlipayBase,
   Badge: Badge,
   BackgroundGeolocation: BackgroundGeolocation,
   BackgroundMode: BackgroundMode,
